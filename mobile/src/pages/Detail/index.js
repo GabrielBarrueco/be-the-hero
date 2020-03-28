@@ -63,11 +63,11 @@ export default function Detail(){
                 <Text style={styles.HeroDescription}>Entre em contato:</Text>
 
                 <View style={styles.actions}>
-                    <TouchableOpacity styles={styles.action} onPress={SendWhatsApp}>
+                    <TouchableOpacity styles={styles.action} onPress={sendWhatsApp}>
                         <Text style={styles.actionText}>WhatsApp</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity styles={styles.action} onPress={SendEmail}>
+                    <TouchableOpacity styles={styles.action} onPress={sendMail}>
                         <Text style={styles.actionText}>E-mail</Text>
                     </TouchableOpacity>
 
