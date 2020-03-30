@@ -5,7 +5,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import * as MailComposer from 'expo-mail-composer'
 
 import styles from './styles';
-import logoImg from '../../assets/logo.png'
+import logoImg from '../../assets/logo.png';
 
 export default function Detail(){
     const navigation = useNavigation();

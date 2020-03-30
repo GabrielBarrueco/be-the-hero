@@ -80,6 +80,6 @@ form input{
     margin-right: 8px;
 }
 
-.Logon-container:hover{
+.Logon-container button :hover{
     opacity: 0.8;
 }
