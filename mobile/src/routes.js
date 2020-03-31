@@ -7,7 +7,7 @@ const AppStack = createStackNavigator();
 import Incidents from '../src/pages/Incidents';
 import Detail from '../src/pages/Detail';
 
-export default function routes(){
+export default function Routes(){
     return(
         <NavigationContainer>
             <AppStack.Navigator screenOptions= { {headerShown: false} }>
