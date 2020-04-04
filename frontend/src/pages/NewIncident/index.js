@@ -10,13 +10,12 @@ import {Link, useHistory} from 'react-router-dom';
 
 import { FiArrowLeft } from 'react-icons/fi'
 
-const ongId = localStorage.getItem('ongId');
-
 export default function NewIncident(){
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [value, setValue] = useState('');
 
+    const ongId = localStorage.getItem('ongId');
     const history = useHistory();
 
     async function handleNewIncident(e){

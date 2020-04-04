@@ -10,10 +10,12 @@ module.exports = {
         console.log(count);
 
         const incidents = await connection('incidents')
-        .join('ongs','ong_id','=','incidents.ong_id')
+        .innerJoin('ongs','incidents.ong_id','=','ongs.id')
         .limit(5)
         .offset((page - 1)* 5)
         .select(['incidents.*','ongs.name','ongs.email','ongs.whatsapp','ongs.city','ongs.uf']);
+
+        //console.log(incidents);
 
         response.header('X-Total-Count', count['count(*)']);
 
